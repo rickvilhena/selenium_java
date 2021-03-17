@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+README.md</font>
+</center></td></tr></table>
+<pre><span class="s0"># </span><span class="s2">DESAFIO STEFANINI</span>
+
+<span class="s2">Projeto para web/UI contemplando o desafio proposto pela Stefanini.</span>
+
+<span class="s0">## </span><span class="s2">ferramentas utilizadas</span><span class="s1">:</span>
+<span class="s0">- </span><span class="s2">selenium webdriver</span>
+<span class="s0">- </span><span class="s2">junit</span>
+<span class="s0">- </span><span class="s2">linguagem java</span>
+
+<span class="s0">## </span><span class="s2">cenários em BDD</span><span class="s1">:</span>
+<span class="s3">```</span>
+<span class="s3">#language: pt</span>
+
+<span class="s3">Funcionalidade: Acessar o site da Stefanini</span>
+  <span class="s3">Como um QA</span>
+  <span class="s3">Gostaria de acessar o site da Stefanini</span>
+  <span class="s3">Para realizar o desafio proposto para automação web</span>
+
+  <span class="s3">Cenário: acessar site com sucesso</span>
+      
+  <span class="s3">Cenário: acessar site sem preencher o campo nome</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um cadastro sem preencher o campo nome</span>
+    <span class="s3">Então verifico a mensagem de erro &quot;O campo Nome é obrigatório.&quot;</span>
+
+  <span class="s3">Cenário: acessar site sem preencher o campo email</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um cadastro sem preencher o campo email</span>
+    <span class="s3">Então verifico a mensagem de erro &quot;O campo E-mail é obrigatório.&quot;</span>
+
+  <span class="s3">Cenário: acessar site sem preencher o campo senha</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um cadastro sem preencher o campo senha</span>
+    <span class="s3">Então verifico a mensagem de erro &quot;O campo Senha é obrigatório.&quot;</span>
+
+  <span class="s3">Cenário: acessar site sem preencher os campos obrigatórios</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um cadastro sem preencher os campos nome, email e senha</span>
+    <span class="s3">Então verificao as mensagens de erro para os campos não preenchidos    </span>
+    
+  <span class="s3">Cenário: acessar site sem preencher o campo nome completo</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um cadastrto sem preencher o campo nome completo</span>
+    <span class="s3">Então verifico a mensagem de erro &quot;Por favor, insira um nome completo.&quot;</span>
+
+  <span class="s3">Cenário: acessar site sem preencher o campo email corretamente</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um cadastro sem preencher o campo email com um email válido</span>
+    <span class="s3">Então verifico a mensagem de erro &quot;Por favor, insira um e-mail válido.&quot;</span>
+
+  <span class="s3">Cenário: acessar site sem preencher o campo senha corretamente</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo o cadastro sem preencher a senha </span>
+    <span class="s3">E não contendo os 8 caracteres </span>
+    <span class="s3">Então verifico a mensagem de erro &quot;A senha deve conter ao menos 8 caracteres.&quot;</span>
+
+  <span class="s3">Cenário: acessar site com sucesso</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um cadastro válido</span>
+    <span class="s3">Então verifico que o cadastro foi realizado com sucesso</span>
+  
+  <span class="s3">Cenário: acessar site com sucesso criando um segundo cadastro</span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo um outro cadastro válido</span>
+    <span class="s3">Então verifico que o cadastro foi realizado com sucesso</span>
+  
+  <span class="s3">Cenário: acessar site com sucesso e realizaar a exclusão </span>
+    <span class="s3">Dado que acesso o site da stefanini</span>
+    <span class="s3">Quando realizo uma exclusão de cadastro</span>
+    <span class="s3">Então verifico que o cadastro foi excluido com sucesso</span>
+ <span class="s3">```</span>
+
+<span class="s0">## </span><span class="s2">observações</span><span class="s1">:</span>
+
+<span class="s2">Estudei esses dias o que era o BDD, como era essa metodologia, os tipos de escritas com boas praticas e etc...</span>
+
+<span class="s2">Confesso que, pelo curto espaço de tempo, evitei tentar focar no ferramental </span><span class="s1">(</span><span class="s2">cucumber</span><span class="s1">) </span><span class="s2">e prejudicar minha entrega como um todo, por isso dediquei meu tempo para estudar, aprender e escrever um exemplo de escrita em BDD sem a utilização do auxiliar cucumber na automação.</span>
+
+<span class="s2">Espero que entendam.</span>
+<span class="s2">Obrigado</span><span class="s1">!</span>
+</pre>
+</body>
+</html>
